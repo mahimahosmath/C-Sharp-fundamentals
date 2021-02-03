@@ -1,0 +1,13 @@
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\bin\Debug\netcoreapp3.1\GradeBook.exe
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\bin\Debug\netcoreapp3.1\GradeBook.deps.json
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\bin\Debug\netcoreapp3.1\GradeBook.runtimeconfig.json
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\bin\Debug\netcoreapp3.1\GradeBook.runtimeconfig.dev.json
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\bin\Debug\netcoreapp3.1\GradeBook.dll
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\bin\Debug\netcoreapp3.1\GradeBook.pdb
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.csprojAssemblyReference.cache
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.AssemblyInfoInputs.cache
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.AssemblyInfo.cs
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.csproj.CoreCompileInputs.cache
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.dll
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.pdb
+C:\Users\INMAHOS\git1\C-Sharp-fundamentals\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.genruntimeconfig.cache
