@@ -1,40 +1,145 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace GradeBook
 {
-    class Book
+     public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
+    public interface IBook
     {
-        public Book(string name)
+        void AddGrade(double grade);
+        Statistics GetStatistics();
+        string Name {get;}
+        event GradeAddedDelegate GradeAdded;
+    }
+    public abstract class Book : NamedObject,IBook
+    {
+        protected Book(string name) : base(name)
         {
-            this.name=name;
-            grades= new List<double>();
-        }
-        public void AddGrade(double grade)
-        {
-            grades.Add(grade);
-        }
-
-        public void ShowStatistics()
-        {
-    
-    
-         var result= 0.0;
-         var highest = double.MinValue;
-         var lowest= double.MaxValue;
-         foreach(var number in grades)
-         {
-             lowest=Math.Min(number,lowest);
-             highest=Math.Max(number,highest);
-             result+=number;
-         }
-         result/=grades.Count;
-         Console.WriteLine($"the average grade is {result:N1}");
-            Console.WriteLine($"the highest grade is {highest}");
-            Console.WriteLine($"the lowest grade is {lowest}");
         }
 
-        private List<double> grades;
-       private string name;
+        public abstract event GradeAddedDelegate GradeAdded;
+
+        public abstract void AddGrade(double grade);
+
+        public abstract Statistics GetStatistics();
+        
+    }
+
+    public class DiskBook : Book
+    {
+        public DiskBook(string name) : base(name)
+        {
+        }
+
+        public override event GradeAddedDelegate GradeAdded;
+
+        public override void AddGrade(double grade)
+        {
+           using(var writer= File.AppendText($"{Name}.txt"))
+           {
+               writer.WriteLine(grade);
+               if(GradeAdded!=null)
+               {
+                   GradeAdded(this,new EventArgs());
+               }
+               
+           }
+           
+        }
+
+        
+
+        public override Statistics GetStatistics()
+        {
+            var result= new Statistics();
+
+            using(var reader = File.OpenText($"{Name}.txt"))
+            {
+              var line =  reader.ReadLine();
+              while(line!=null)
+              {
+                  var number = double.Parse(line);
+                  result.Add(number);
+                  line= reader.ReadLine();
+              }
+            }
+
+
+
+            return result;
+        }
+    }
+    public class InMemoryBook: Book
+    {
+        public InMemoryBook(string name) : base(name)
+        {
+            Name=name;
+            grades= new LinkedList<double>();
+        }
+
+
+        public void AddLetterGrade(char letter)
+        {
+            switch(letter)
+            {
+                case 'A':
+                AddGrade(90);
+                break;
+
+                 case 'B':
+                AddGrade(80);
+                break;
+
+                 case 'C':
+                AddGrade(60);
+                break;
+
+                 case 'D':
+                AddGrade(50);
+                break;
+
+                default: AddGrade(70);
+                break;
+
+
+            }
+        }
+        public override void AddGrade(double grade)
+
+        {
+            if (grade<=100 && grade>=0)
+            {
+            grades.AddLast(grade);
+            if(GradeAdded!=null)
+            {
+                GradeAdded(this,new EventArgs());
+            }
+            }
+            else
+            {
+                throw new ArgumentException($"Invalid {nameof(grade)}");
+            }
+        }
+        public override event GradeAddedDelegate GradeAdded;
+        public override Statistics GetStatistics()
+        {
+    
+             var result = new Statistics();
+            
+            foreach(var grade in grades)
+            {
+                result.Add(grade);
+            }
+
+         return result;
+         
+        }
+
+        private LinkedList<double> grades;
+
+
+      public const string CATEGORY = "Science";
     }
 }
