@@ -1,0 +1,13 @@
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp3.1\LinkedListImplementation.exe
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp3.1\LinkedListImplementation.deps.json
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp3.1\LinkedListImplementation.runtimeconfig.json
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp3.1\LinkedListImplementation.runtimeconfig.dev.json
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp3.1\LinkedListImplementation.dll
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\bin\Debug\netcoreapp3.1\LinkedListImplementation.pdb
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.csprojAssemblyReference.cache
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.AssemblyInfoInputs.cache
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.AssemblyInfo.cs
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.csproj.CoreCompileInputs.cache
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.dll
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.pdb
+C:\Users\INMAHOS\source\repos\LinkedListImplementation\LinkedListImplementation\obj\Debug\netcoreapp3.1\LinkedListImplementation.genruntimeconfig.cache
